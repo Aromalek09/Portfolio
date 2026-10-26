@@ -1,294 +1,148 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aromal EK | Full Stack Developer</title>
+    <meta name="description" content="Aromal EK - Full Stack Developer with 2+ years of experience in MERN, Django, PostgreSQL and HTMX." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <canvas id="bg" aria-hidden="true"></canvas>
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"
-    ></script>
-
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-
-    <body class="bg-dark text-white">
-        <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
-            <div class="container-fluid">
-                <i class="fa-solid fa-address-card"></i>
-                <a class="navbar-brand" href="#">Dev Folio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header class="nav">
+        <a href="#home" class="logo">Aromal EK<span>.</span></a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
-        
-        <section class="home" id="home">
-            <div class="container-lg">
-                <div class="row min-vh-100 align-items-center align-content-center">
-                    <div class="col-md-6">
-                        <div class="home-img text-center">
-                            <img src="images/profile.JPG" alt="Profile Picture" class="img-fluid rounded-circle mw-100" style="width: 500px; height: 500px; object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col order-md-first">
-                        <div class="home-text ">
-                            <p class="mb-1">Hello, I'm</p>
-                            <h1 class="text-danger fs-1 text-uppercase fw-bold">Web Developer</h1>
-                            <h2 class="fw-bold">Aromal EK</h2>
-                            <p class="mt-4 "> A dedicated and self motivated Web Developer with 6 months experience in a Software company.
-                                My greatest strength is problem solving abilities and passion for innovation. Seeking a challenging
-                                position in a reputable organization</p>
-                            
-                        </div>
-                    </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Hello, I'm</p>
+                <h1>Aromal EK</h1>
+                <h2>Full Stack <span class="accent" id="typed"></span></h2>
+                <p class="lead">2+ years building web products with the MERN stack and Python Django. Currently shipping features at a product-based company.</p>
+                <div class="cta">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="Aromal EK_Developer_CV.pdf" class="btn ghost" download>Download CV</a>
+                </div>
+            </div>
+            <div class="hero-photo reveal">
+                <img src="images/profile.png" alt="Aromal EK" />
+            </div>
+            <div class="scroll-hint">scroll</div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="title reveal">About</h2>
+            <div class="about-grid">
+                <p class="reveal">I'm a full stack developer with over two years of experience designing and building web applications end to end: from PostgreSQL schemas and Django or Node APIs to responsive React interfaces. I enjoy solving problems, keeping code simple, and shipping things people actually use.</p>
+                <div class="stats">
+                    <div class="stat reveal"><b data-count="2" data-suffix="+">0</b><span>Years experience</span></div>
+                    <div class="stat reveal"><b data-count="4">0</b><span>Products built</span></div>
+                    <div class="stat reveal"><b data-count="8">0</b><span>Core technologies</span></div>
                 </div>
             </div>
         </section>
 
-        <section class="about py-5" id="about">
-            <div class="container-lg py-4">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title text-center">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="about-text">
-                            <h3 class="">PYTHON DEVELOPER || WEB DEVELOPER WEB DESIGNER</h3>
-                            <p class="">Hello! I'm Aromal EK, a passionate Python Developer, Web Developer, and Web Designer with a knack for crafting elegant, efficient, and user-friendly digital experiences. With a strong foundation in full-stack development and a creative flair for design, I specialize in building robust back-end systems, dynamic front-end interfaces, and responsive web designs that engage and inspire.
-                            </p>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="fact-item">
-                                    <a href="Aromal EK_Developer_CV.pdf" class="btn btn-danger px-3 mt-3">  Download CV </a>
-
-                                </div>
-                                
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-1">
-                            
-                            <div class="skill-item">
-                                <h3>Python</h3>
-                            </div>
-                            <div class="progress" style="height: 5px; width: 800px;">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <div class="skill-item">
-                                <h3>Django</h3>
-                            </div>
-                            <div class="progress" style="height: 5px; width: 800px;">
-                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-
-                            <div class="skill-item">
-                                <h3>HTML</h3>
-                            </div>
-                            <div class="progress" style="height: 5px; width: 800px;">
-                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            
-                            <div class="skill-item">
-                                <h3>Bootstrap</h3>
-                            </div>
-                            <div class="progress" style="height: 5px; width: 800px;">
-                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            
-                            <div class="skill-item">
-                                <h3>CSS</h3>
-                            </div>
-                            <div class="progress" style="height: 5px; width: 800px;">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
+        <section id="skills" class="section">
+            <h2 class="title reveal">Skills</h2>
+            <div class="chips">
+                <span class="chip reveal"><i class="fa-brands fa-node-js"></i> MERN Stack</span>
+                <span class="chip reveal"><i class="fa-brands fa-python"></i> Python Django</span>
+                <span class="chip reveal"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+                <span class="chip reveal"><i class="fa-brands fa-react"></i> React</span>
+                <span class="chip reveal"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="chip reveal"><i class="fa-solid fa-bolt"></i> HTMX</span>
+                <span class="chip reveal"><i class="fa-solid fa-table"></i> SQL</span>
+                <span class="chip reveal"><i class="fa-brands fa-git-alt"></i> Git</span>
+            </div>
         </section>
 
-
-
-<br><br>
-
-        <section class="contact py-5" id="contact">
-
-            <div class="container-lg py-4">
-            
-            <div class="row justify-content-center">
-            
-            <div class="col-lg-8">
-            
-            <div class="section-title text-center">
-            
-            <h2 class="fw-bold mb-5">Contact Me</h2>
-            
+        <section id="projects" class="section">
+            <h2 class="title reveal">Projects</h2>
+            <div class="cards">
+                <article class="card reveal" data-tilt>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Upagram</h3>
+                    <p class="tag">Learning Management System</p>
+                    <p>A learning management platform for delivering and managing courses online.</p>
+                <a class="visit" href="https://upagram.in/" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </article>
+                <article class="card reveal" data-tilt>
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <h3>StudyJam</h3>
+                    <p class="tag">Learning Management System</p>
+                    <p>An LMS focused on student learning, built as part of my work in a product company.</p>
+                <a class="visit" href="https://studyjam.in/" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </article>
+                <article class="card reveal" data-tilt>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Dignex</h3>
+                    <p class="tag">Garage Management &amp; Inventory</p>
+                    <p>Inventory and garage management software for tracking stock and day-to-day workshop operations.</p>
+                <a class="visit" href="https://dignex.codesap.com/" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </article>
+            <article class="card reveal" data-tilt>
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Alpago</h3>
+                    <p class="tag">Web Project</p>
+                    <p>A live website I worked on for Alpago Group.</p>
+                    <a class="visit" href="https://www.alpagogroup.com/" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </article>
             </div>
-            
-            
-            </div>    
-            
-            
+        </section>
 
-            <div class="row">
-
-                <div class="col-md-5">
-                
-                <div class="contact-item d-flex mb-3">
-                
-                <div class="icon fs-4 text-danger">
-                
-                <i class="fas fa-envelope"></i>
-                
+        <section id="contact" class="section">
+            <h2 class="title reveal">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p><i class="fas fa-envelope"></i> <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=aromalek20@gmail.com" target="_blank" rel="noopener">aromalek20@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919544059464">9544059464</a></p>
+                    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/aromalek/" target="_blank" rel="noopener">linkedin.com/in/aromalek</a></p>
+                    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Aromalek09" target="_blank" rel="noopener">github.com/Aromalek09</a></p>
                 </div>
-                
-                <div class="text ms-3">
-                
-                <h3 class="fs-5">Email</h3>
-                
-                <p class="m-0">aromalek20@gmail.com</p>
-                
-                </div>
-                
-                </div>
+                <form class="contact-form reveal" id="form">
+                    <input type="text" name="name" placeholder="Your name" required />
+                    <input type="email" name="email" placeholder="Your email" required />
+                    <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-                <div class="col-md-5">
-                
-                    <div class="contact-item d-flex mb-3">
-                    
-                    <div class="icon fs-4 text-danger">
-                    
-                    <i class="fas fa-phone"></i>
-                    
-                    </div>
-                    
-                    <div class="text ms-3">
-                    
-                    <h3 class="fs-5">Phone</h3>
-                    
-                    <p class="m-0">9544059464</p>
-                    
-                    </div>
-                    
-                    </div>
+    <footer class="footer">
+        <div class="footer-inner">
+            <a href="#home" class="logo">Aromal EK<span>.</span></a>
+            <p class="footer-tag">Full Stack Developer &middot; MERN &middot; Django &middot; PostgreSQL</p>
+            <nav class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/aromalek/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Aromalek09" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=aromalek20@gmail.com" target="_blank" rel="noopener" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Aromal EK. All rights reserved.</p>
+    </footer>
 
-
-                    <div class="contact-item d-flex mb-3">
-                    
-                        <div class="icon fs-4 text-danger">
-                        
-                            <i class="fa-brands fa-linkedin" style="color: #f82912;"></i>
-                        
-                        </div>
-                        
-                        <div class="text ms-3">
-                        
-                        <h3 class="fs-5">LinkedIn</h3>
-                        
-                        <p class="m-0">
-                            <a href="https://www.linkedin.com/in/aek3" class="text-link">www.linkedin.com/in/aek3</a>
-                        </p>
-                        
-                        </div>
-                        
-                        </div>
-                        
-                </div>
-                </div>
-                <div class="col-md-7">
-
-                    <div class="contact-form">
-                    
-                    <form>
-                    
-                    <div class="row">
-                    
-                    <div class="col-lg-6 mb-4">
-                    
-                    <input type="text" placeholder="Your Name" class=" form-control form-control-lg fs-6 border-0 shadow-sm">
-                    
-                    </div>
-                    
-                    <div class="col-lg-6 mb-4">
-                    
-                    <input type="text" placeholder="Your Email" class=" form-control form-control-1g fs-6 border-0 shadow-sm">
-                    
-                    </div>
-                    
-                    </div>
-                    <div class="row">
-
-                        <div class="col-lg-12 mb-4">
-                        
-                        <input type="text" placeholder="Subject" class="
-                        
-                        form-control form-control-lg fs-6 border-0 shadow-sm">
-                        
-                        </div>
-                        
-                        </div>
-                        
-                        <div class="row">
-                        
-                        <div class="col-lg-12 mb-4">
-                        
-                        <textarea rows="5" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
-                        
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <button type="submit" class="btn btn-danger px-3">Send Message</button>
-                        </div>
-                    </div>
-                    </form>
-                
-                
-                
-
-    </body>
+    <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
 </html>
